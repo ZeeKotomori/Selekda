@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSGN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="welcome-screen">
+        <img src="media/" alt="">
+        <h1>Welcome to DSGN</h1>
+    </div>
+
+    <div class="app-container">
+        <!--Alat / Tollbar-->
+        <div class="toolbar">
+            <button id="brushTool">Brush</button>
+            <button id="eraserTool">Eraser</button>
+            <button id="moveTool">Move</button>
+            <button id="shapeTool">Shape</button>
+            <button id="colorPickerTool">Color Picker</button>
+            <button id="paintBucketTool">Paint Bucket</button>
+            <button id="textTool">Text</button>
+            <button id="cloneStampTool">Clone stamp</button>
+            <button id="selectionTool">Select</button>
+            <button id="importTool">Import</button>
+            <button id="exportTool">Export</button>
+        </div>
+        
+        <!--Workspace-->
+        <div class="workspace">
+            <canvas id="drawingCanvas" width="800" height="600"></canvas>
+        </div>
+        
+        <!--Layer Bar-->
+        <div class="layer-bar">
+            <h3>Layers</h3>
+            <ul id="layerList">
+                <li class="layer" id="backgroundLayer">Background</li>
+            </ul>
+            <button id="duplicateLayerBtn">Duplicate Layer</button>
+        </div>
+        
+        <div class="controls">
+            <button id="undoBtn">Undo (<span id="undoCount">0</span>)</button>
+            <button id="redoBtn">Redo (<span id="redoCount">0</span>)</button>
+            <button id="zoomInBtn">Zoom In</button>
+            <button id="zoomOutBtn">Zoom Out</button>
+            <span id="zoomLevel">100%</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
